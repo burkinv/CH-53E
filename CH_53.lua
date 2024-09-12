@@ -3,7 +3,7 @@
 CH_53 =  {
         
 	Name 				=   'CH_53',
-	DisplayName			= _('Sikorsky CH-53E Super Stallion'),
+	DisplayName			= _('CH-53E'),
 	--ViewSettings        = ViewSettings,
 	
 	HumanCockpit 		= true,
@@ -62,7 +62,7 @@ CH_53 =  {
 		M_nominal	=	22108.0,
 		M_max	=	33339.0,
 		--MOI = 	{198000,	76162,	80778}, --{6170,	28982,	33441},
-		M_fuel_max	=	1157,
+		M_fuel_max	=	6352, --2*2040(LBS)NO_1&3 + 2563(LBS)NO_2L/R(CROSS_FEED) + 2*3680.1(SPONSONS_AUX_L/R) = 14003.8(LBS)           --1157,
 		V_max	=	89.99,
 		V_max_cruise	=	75,
 		Vy_max	=	12.7,
@@ -378,15 +378,15 @@ Pylons = {
 [18] = {critical_damage = 3,  args = {189}},
 [23] = {critical_damage = 7,  args = {225}},
 [24] = {critical_damage = 7,  args = {215}}, 
-[35] = {critical_damage = 11, args = {158}}, -- задняя часть фюзеляжа (левый борт)
-[36] = {critical_damage = 11, args = {157}}, -- (правый борт)
+[35] = {critical_damage = 11, args = {158}}, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ)
+[36] = {critical_damage = 11, args = {157}}, -- (пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ)
 [45] = {critical_damage = 3,  args = {236}},
 [46] = {critical_damage = 3,  args = {234}}, 
-[54] = {critical_damage = 7,  args = {247}}, --РВ
-[55] = {critical_damage = 4,  args = {243}, deps_cells = {54}}, -- киль
+[54] = {critical_damage = 7,  args = {247}}, --пїЅпїЅ
+[55] = {critical_damage = 4,  args = {243}, deps_cells = {54}}, -- пїЅпїЅпїЅпїЅ
 [56] = {critical_damage = 14,  args = {156}, deps_cells = {31, 57, 55, 54, 45, 46}},
 [57] = {critical_damage = 14,  args = {155}, deps_cells = {31, 56, 55, 54, 45, 46}},
-[58] = {critical_damage = 5,  args = {297}}, -- створки грузовой кабины
+[58] = {critical_damage = 5,  args = {297}}, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 [59] = {critical_damage = 5,  args = {148}},
 [61] = {critical_damage = 9,  args = {147}},
 [62] = {critical_damage = 9,  args = {250}},
@@ -399,7 +399,7 @@ Pylons = {
 [83] = {critical_damage = 3, args = {134}}, -- nose wheel
 [84] = {critical_damage = 3, args = {136}}, -- left wheel
 [85] = {critical_damage = 3, args = {135}}, -- right wheel
-[31] = {critical_damage = 1,  args = {81}}, -- фейковый элемент! для 81 аргумента!
+[31] = {critical_damage = 1,  args = {81}}, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ! пїЅпїЅпїЅ 81 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!
 				
 	},
 	

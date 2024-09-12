@@ -1,13 +1,19 @@
 CH_53 = { 
-	center_of_mass		= {0.0, -0.274, 0},	--x,y,z {0.0, -0.274, 0}
-	moment_of_inertia = {198000,	33176162,	80778} --{6170,	28982,	33441}, --{198000,	76162,	80778}, 
+	--center_of_mass		= {0.0, -0.274, 0},	--x,y,z {0.0, -0.274, 0}
+	--center_of_mass		= {0.0, 0.674, 0},
+	--center_of_mass		= {0.0, 1.174, 0},
+	center_of_mass		= {0.0, 2.174, 0},
+	--moment_of_inertia = {198000,	33176162,	80778}, --{6170,	28982,	33441}, --{198000,	76162,	80778}, 
+	--moment_of_inertia = {126395,  308559, 192377}, 
+	--moment_of_inertia = {126395,  608559, 192377}, -- TESTED
+	--moment_of_inertia = {226395,  1308559, 692377},
+	moment_of_inertia = {426395,  3308559, 692377},
 
 	suspension =
 	{	
 		{--Nose wheel
 			mass = 30,
-			 pos   			  = {5.312, 0.102,    0}
-
+			 --pos   			  = {5.312, 0.102,    0}
 			damage_element = 0, 
 			self_attitude = true,
 			wheel_axle_offset = 0.14,
@@ -46,7 +52,7 @@ CH_53 = {
 			},
 			{--Left wheel
 				mass = 80,
-				 pos   			  = {-2.371, -0.071, 1.808},
+				 --pos   			  = {-2.371, -0.071, 1.808},
 				damage_element	    = 3,
 				wheel_axle_offset 	= 0.38,
 				self_attitude	    = false,
@@ -62,12 +68,12 @@ CH_53 = {
 			  amortizer_direct_damper_force_factor = 50000,
 			  amortizer_back_damper_force_factor  = 60000,
 				  
-				  amortizer_direct_damper_force_factor = 50000,
-				  amortizer_back_damper_force_factor  = 60000,
+				--   amortizer_direct_damper_force_factor = 50000,
+				--   amortizer_back_damper_force_factor  = 60000,
 
 				allowable_hard_contact_length			= 0.55,
 				anti_skid_installed = false,
-				wheel_roll_friction_factor     = 0.20,-- DO NOT activate, already implemented in EFM code
+				--wheel_roll_friction_factor     = 0.20,-- DO NOT activate, already implemented in EFM code
 				wheel_damage_speed			   = 180,
 				wheel_moment_of_inertia  	   = 0.6, --wheel moi as rotation body
 				
@@ -90,7 +96,7 @@ CH_53 = {
 			},
 			{-- Right wheel
 				mass = 80,
-				 pos   			  = {-2.371, -0.071, -1.808},
+				 --pos   			  = {-2.371, -0.071, -1.808},
 				damage_element	    = 3,
 				wheel_axle_offset 	= 0.38,
 				self_attitude	    = false,
@@ -106,12 +112,12 @@ CH_53 = {
 			  amortizer_direct_damper_force_factor = 50000,
 			  amortizer_back_damper_force_factor  = 60000,
 				  
-				  amortizer_direct_damper_force_factor = 50000,
-				  amortizer_back_damper_force_factor  = 60000,
+				--   amortizer_direct_damper_force_factor = 50000,
+				--   amortizer_back_damper_force_factor  = 60000,
 
 				allowable_hard_contact_length			= 0.55,
 				anti_skid_installed = false,
-				wheel_roll_friction_factor     = 0.20,-- DO NOT activate, already implemented in EFM code
+				--wheel_roll_friction_factor     = 0.20,-- DO NOT activate, already implemented in EFM code
 				wheel_damage_speed			   = 180,
 				wheel_moment_of_inertia  	   = 0.6, --wheel moi as rotation body
 				

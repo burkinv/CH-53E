@@ -39,8 +39,8 @@ keyCommands = {
 	{pressed = EFM_commands.trimRight, name = _('Cyclic Trim Right'), category = _('Systems')},
 	{down = EFM_commands.trimReset, name = _('Cyclic Trim Reset'), category = _('Systems')},
 	{down = EFM_commands.trimSave, name = _('Cyclic Trim Save'), category = _('Systems')},
-	{pressed = EFM_commands.pedalsLeft, name = _('Pedals Left'), category = _('Systems')},
-	{pressed = EFM_commands.pedalsRight, name = _('Pedals Right'), category = _('Systems')},
+	{pressed = EFM_commands.pedalsLeftRudderStart,  up = EFM_commands.pedalsLeftRudderStop,  name = _('Pedals Left'),  category = _('Systems')},
+	{pressed = EFM_commands.pedalsRightRudderStart, up = EFM_commands.pedalsRightRudderStop, name = _('Pedals Right'), category = _('Systems')},
 
     {pressed = EFM_commands.pidPUp, name = _('PID P Up'), category = _('Systems')},
     {pressed = EFM_commands.pidPDown, name = _('PID P Down'), category = _('Systems')},
@@ -67,6 +67,10 @@ keyCommands = {
     {pressed = EFM_commands.autopilotBARALT_DEC, name = _('BarAlt Dec'), category = _('Autopilot')},
     {pressed = EFM_commands.autopilotHDGHOLD_INC, name = _('HdgHold Inc'), category = _('Autopilot')},
     {pressed = EFM_commands.autopilotHDGHOLD_DEC, name = _('HdgHold Dec'), category = _('Autopilot')},
+
+-- Debug
+    {down    = EFM_commands.ToggleDebugInfo,      name = _('Debug Info - ON/OFF'),  category = {_('Control Stick'), _('Debug')}},
+
 -- Gun turret
 { pressed = Keys.GunturretUp, name = _('Target Turret Up'), category = _('Weapons')},
 { pressed = Keys.GunturretDown, name = _('Target Turret Down'), category = _('Weapons')},
